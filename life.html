@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Game of life</title>
+      	<script src="jquery-1.4.4.min.js" type="text/javascript"></script>
+      	<script src="life.js" type="text/javascript"></script>
+		<link type="text/css" rel="stylesheet" href="life.css"/>
+    </head>
+    <body>
+    	<h1>The Game of Life</h1>
+    	
+    	<div>
+    		Step: <span id="steps"></span>
+    	</div>
+    	
+    	<form id="tools">
+    		<input type="button" id="buttonStep" value="Step" />
+    		<input type="button" id="buttonLoop" value="Loop" />
+    		<input type="button" id="buttonStop" value="Stop" />
+    		<label>
+    			Interval (ms):
+	    		<input type="text" id="interval" value="1000" />
+    		</label>
+    		
+    		<input type="button" id="buttonRandom" value="Randomize" />
+    		<input type="button" id="buttonClear" value="Clear" />
+    	</form>
+    	<div id="grid">The grid</div>
+    </body>
+</html>

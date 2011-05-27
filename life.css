@@ -1,0 +1,26 @@
+#grid {
+	border:1px solid black;
+}
+
+.cell {
+	float:left;
+	width:15px;
+	height:15px;
+	border-left:1px solid white;
+	border-top:1px solid white;
+}
+
+.cell.alive {
+	background-color:red;
+}
+
+.cell.dead {
+	background-color:white;
+}
+
+.clearer {
+	float:left;
+	clear:left;
+	width:0px;
+	height:0px;
+}
