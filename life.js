@@ -3,7 +3,7 @@
  */
 var LIFE = {
 		intervalId: null,
-		interval: 1000,
+		interval: 10,
 		randomFactor: 0.8,
 		stepNumber: 0,
 		cellHeight: 15,
@@ -19,6 +19,10 @@ var LIFE = {
 $(function() {
 	// Setup the grid
 	clearGrid();
+	
+	// Intial random cells in grid ready to play
+	randomGrid(LIFE.grid);
+	displayGrid(LIFE.grid);
 	
 	// UI handlers
 	$('#buttonStep').click(function () {
@@ -43,8 +47,6 @@ $(function() {
 	});
 
 	$('#interval').change(function () {
-		// 
-		
 		return false;
 	});
 	
